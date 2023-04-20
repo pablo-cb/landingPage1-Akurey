@@ -754,6 +754,10 @@
   height: 100vh;
   overflow-y: scroll;
 }
+
+.asidewrapper::-webkit-scrollbar{
+  width: auto;
+}
 .stickycontainer {
   top: 150px;
   position: sticky;
