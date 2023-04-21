@@ -250,6 +250,10 @@
   font-weight: 800;
   font-family: inherit;
 }
+
+h6 {
+  padding-top: 80px;
+}
 .body-12 {
   font-size: var(--body-1-size);
   color: var(--primary-white);
@@ -980,6 +984,7 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
+
   .nav {
     flex: 1;
   }
@@ -995,6 +1000,7 @@
     font-weight: 900;
     font-family: var(--body-2);
   }
+
   .text {
     flex: 1;
   }
@@ -1230,9 +1236,12 @@
   }
 }
 @media screen and (max-width: 720px) {
+  h6 {
+    padding-top: 0px;
+  }
   .vector-icon {
     width: 48px;
-    height: 480px;
+    height: 48px;
   }
   .button-1 {
     display: none;
