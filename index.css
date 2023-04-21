@@ -33,9 +33,10 @@ html,body {
   align-items: center;
   justify-content: center;
 }
-.button-1,
+
 .button-1:hover {
-  color: var(--primary-blue);
+  opacity: 70%;
+  /* color: var(--primary-blue); */
 }
 .schedule-a-meeting {
   position: relative;
@@ -59,6 +60,7 @@ html,body {
 .button-2:hover {
   border: 2px solid var(--color-gray-100);
   box-sizing: border-box;
+  opacity: 70%;
 }
 .buttons,
 .nav,
@@ -699,6 +701,7 @@ h6 {
 .button1:hover {
   border: 2px solid rgba(255, 255, 255, 0.85);
   box-sizing: border-box;
+  opacity: 70%;
 }
 .visit-our-website {
   position: relative;
@@ -726,6 +729,11 @@ h6 {
   justify-content: center;
   gap: var(--gap-5xs);
 }
+
+.button-2:hover {
+  opacity: 70%;
+}
+
 .call-to-action-box,
 .sidebar {
   width: 223px;
@@ -845,15 +853,17 @@ h6 {
   color: var(--primary-blue);
   text-align: center;
   mix-blend-mode: normal;
+  /* padding-top: 2rem; */
 }
 .box {
   flex: 1;
   border-radius: var(--br-3xs);
   background-color: var(--primary-white);
   flex-direction: row;
-  padding: 7px 28px;
+  /* height: 2rem; */
+  /* padding: 1rem; */
 }
-.box,
+
 .button,
 .cta-box,
 .text2 {
@@ -871,6 +881,7 @@ h6 {
   flex-direction: row;
 }
 .button:hover {
+  background-color: transparent;
   border: 2px solid var(--primary-white);
   color: #fff;
 }
