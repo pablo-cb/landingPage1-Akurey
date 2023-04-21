@@ -930,7 +930,7 @@ h6 {
   width: 1600px;
   height: 5337px;
   flex-shrink: 0;
-  display: none;
+  /* display: none; */
   z-index: 5;
 }
 .body-22 {
