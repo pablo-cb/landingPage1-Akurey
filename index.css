@@ -1,3 +1,7 @@
+html,body {
+  overflow-x: hidden;
+}
+
 .vector-icon {
   position: relative;
   width: 57px;
@@ -31,7 +35,7 @@
 }
 .button-1,
 .button-1:hover {
-  color: var(--color-royalblue-100);
+  color: var(--primary-blue);
 }
 .schedule-a-meeting {
   position: relative;
@@ -50,7 +54,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--color-royalblue-100);
+  color: var(--primary-blue);
 }
 .button-2:hover {
   border: 2px solid var(--color-gray-100);
@@ -62,6 +66,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 }
 .buttons {
   justify-content: center;
@@ -75,7 +80,7 @@
 }
 .navegation {
   background-color: rgba(26, 29, 40, 0.9);
-  width: 1600px;
+  width: 100%;
   height: 88px;
   justify-content: center;
   mix-blend-mode: normal;
@@ -574,7 +579,7 @@ h6 {
 .iconsection {
   align-self: stretch;
   border-radius: var(--br-3xs) 0 0 var(--br-3xs);
-  background-color: #9747ff;
+  background-color: var(--primary-blue);
   display: flex;
   flex-direction: column;
   padding: var(--padding-3xs) var(--padding-base);
@@ -887,52 +892,59 @@ h6 {
   color: var(--primary-white);
   font-family: var(--body-2);
 }
-.left-bottom-icon,
+
+/* ----------- BACKGROUND  ----------- */
 .left-top-icon {
   position: absolute;
-  top: 4112px;
-  left: 114px;
-  width: 329px;
-  height: 335px;
+  top: 5vh;
+  left: -5vw;
+  width: 20rem;
+  height: 20rem;
 }
-.left-top-icon {
-  top: 0;
-  left: -360px;
-  width: 714px;
-  height: 528px;
-}
-.right-middle-icon {
+
+.right-top-icon {
   position: absolute;
-  top: 1821px;
-  right: -430px;
-  width: 767px;
-  height: 632px;
+  top: 40vh;
+  right: -10vw;
+  width: 40rem;
+  height: 40rem;
+}
+
+.left-middle-icon {
+  position: absolute;
+  top: 200vh;
+  left: -10vw;
+  width: 30vw;
+  height: 30vw;
+}
+
+.left-bottom-icon {
+  position: absolute;
+  top: 450vh;
+  left: -10vw;
+  width: 30rem;
+  height: 30rem;
 }
 .right-bottom-icon {
   position: absolute;
-  top: 4603px;
-  left: 1330px;
-  width: 723px;
-  height: 734px;
+  top: 500vh;
+  right: -30vw;
+  width: 60rem;
+  height: 64rem;
 }
-.right-top-icon {
-  position: absolute;
-  top: 260px;
-  right: -406px;
-  width: 690px;
-  height: 790px;
-}
+
 .bg {
+  width: 100vw;
+  height: auto;
   position: absolute;
-  margin: 0 !important;
   top: 0;
   left: 0;
-  width: 1600px;
-  height: 5337px;
   flex-shrink: 0;
-  display: none;
   z-index: 5;
 }
+
+/* ----------- END BACKGROUND  ----------- */
+
 .body-22 {
   margin: 0;
   position: relative;
@@ -980,16 +992,43 @@ h6 {
   position: relative;
   background-color: var(--primary-black);
   width: 100%;
+  /* height: auto; */
   overflow: unset;
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
 
+/* ----------- BACKGROUND  ----------- */
+  .left-top-icon {
+    left: -12rem;
+  }
+
+  .right-top-icon {
+    /* top: 40vh; */
+    right: -25rem;
+  }
+
+  .left-middle-icon {
+    left: -10rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .left-bottom-icon {
+    left: -15rem;
+    width: 30rem;
+    height: 30rem;
+  }
+  .right-bottom-icon {
+    right: -40rem;
+  }
+
+  /* ----------- END BACKGROUND  ----------- */
+
   .nav {
     flex: 1;
   }
   .navegation {
-    width: 100%;
     align-items: center;
     justify-content: center;
     padding-left: 2rem;
@@ -1437,7 +1476,7 @@ h6 {
   }
   .iconsection {
     align-items: center;
-    border-radius: var(--br-3xs);
+    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
     padding: 2rem 0;
   }
   .textspace {
