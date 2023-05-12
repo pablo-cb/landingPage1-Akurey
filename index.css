@@ -1,6 +1,11 @@
-html,body {
+html {
   overflow-x: hidden;
 }
+
+
+/* body {
+  overflow-x: hidden;
+} */
 
 .vector-icon {
   position: relative;
@@ -853,7 +858,6 @@ h6 {
   color: var(--primary-blue);
   text-align: center;
   mix-blend-mode: normal;
-  /* padding-top: 2rem; */
 }
 .box {
   flex: 1;
@@ -951,7 +955,7 @@ h6 {
   top: 0;
   left: 0;
   flex-shrink: 0;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 /* ----------- END BACKGROUND  ----------- */
@@ -1289,6 +1293,11 @@ h6 {
   h6 {
     padding-top: 0px;
   }
+
+  .bg {
+    display: none;
+  }
+
   .vector-icon {
     width: 48px;
     height: 48px;
