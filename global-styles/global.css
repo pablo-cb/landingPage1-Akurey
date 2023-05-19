@@ -1,0 +1,90 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+/* Set border-box to all the elements */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin: 0;
+padding: 0;
+}
+
+:root {
+  /* fonts */
+  --body-2: Lato;
+  --project-font: Lato;
+  --font-inherit: inherit;
+  
+
+  /* font sizes */
+  --body-2-size: 1.6rem;
+  --button-1-size: 2.4rem;
+  --h2-size: 3.7rem;
+  --subtitle-1-size: 2.7rem;
+  --body-1-size: 1.8rem;
+  --quote-size: 2.5rem;
+  --h1-size: 5.8rem;
+  --font-size-21xl: 4.0rem;
+  --font-size-19xl: 3.8rem;
+
+  /* Colors */
+  --primary-black: #1a1d28;
+  --color-gray-100: rgba(255, 255, 255, 0.9);
+  --color-gray-200: rgba(255, 255, 255, 0.7);
+  --primary-white: #fff;
+  --primary-blue: #0068ff;
+  --secondary: #00e1ff;
+
+  /* Gaps */
+  --gap-45xl: 6.4rem;
+  --gap-13xl: 3.2rem;
+  --gap-base: 1.6rem;
+  --gap-0: 0px;
+  --gap-5xs: 0.8rem;
+  --gap-81xl: 10rem;
+  --gap-xl: 2rem;
+  --gap-29xl: 4.8rem;
+  --gap-5xl: 2.4rem;
+  --gap-7xl: 2.6rem;
+  --gap-xs: 1.2rem;
+
+  /* Paddings */
+  --padding-13xl: 3.2rem;
+  --padding-3xs: 1rem;
+  --padding-81xl: 10rem;
+  --padding-base: 1.6rem;
+  --padding-5xl: 2.4rem;
+
+  /* border radiuses */
+  --br-3xs: 1rem;
+  --br-9xl: 2.8rem;
+  --br-23xl: 4.2rem;
+}
